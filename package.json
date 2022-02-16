@@ -1,0 +1,31 @@
+{
+  "name": "snabbdom-sync",
+  "version": "1.0.0",
+  "description": "Snabbdom module to sync parent's children nodes when patching.",
+  "main": "lib/module.js",
+  "module": "lib/module.js",
+  "types": "lib/module.d.ts",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "npx tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joyqi/snabbdom-sync.git"
+  },
+  "keywords": [
+    "snabbdom",
+    "sync"
+  ],
+  "author": "joyqi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joyqi/snabbdom-sync/issues"
+  },
+  "homepage": "https://github.com/joyqi/snabbdom-sync#readme",
+  "devDependencies": {
+    "snabbdom": "^3.3.1",
+    "typescript": "^4.5.5"
+  }
+}
