@@ -79,8 +79,16 @@ function update(oldVNode: VNode, vnode: VNode): void {
     current = vnode;
 }
 
-function post(this: VNode) {
-    if (!parent || !current) {
+function post() {
+    if (!current) {
+        return;
+    }
+
+    if (!parent) {
+        parent = current.data?.attachData?.sync;
+    }
+
+    if (!parent) {
         return;
     }
 
