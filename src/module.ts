@@ -70,7 +70,7 @@ let parent: SyncVNode | null | undefined;
 let current: VNode | null;
 
 function update(oldVNode: VNode, vnode: VNode): void {
-    parent = oldVNode.data?.attachData?.sync;
+    parent = vnode.data?.attachData?.sync ?? oldVNode.data?.attachData?.sync;
 
     if (!parent) {
         return;
